@@ -1,0 +1,71 @@
+
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font size (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+-SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+/* Basic */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  color: #13183F;
+  font-weight:500 ;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+/* GENERAL STYLINGS */
+.container{
+  width: 91%;
+  margin: 0 auto;
+}
+.btn{
+ border-radius: 28px;
+ font-size: 1.6rem;
+ padding: 0.9rem 2.4rem;
+   
+ }
+
+/* HEADER SECTION */
+.header{
+
+}
+
+.header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.8rem;
+}
+.logo{
+  
+  font-size: 2.8rem;
+}
+
+.btn a{
+  text-decoration: none;
+  
+  color: #FFFFFF;
+}
+
+.btn-nav{
+  background-color: #13183F;
+}
+
+@media(min-width: 768px){
+  .container{
+    width: 89%;
+   max-width: 768px;
+  }
+}
