@@ -33,7 +33,7 @@ body{
 .btn{
  border-radius: 28px;
  font-size: 1.6rem;
- padding: 0.9rem 2.4rem;
+
    
  }
 
@@ -47,6 +47,7 @@ body{
   align-items: center;
   justify-content: space-between;
   height: 4.8rem;
+  margin-top: 16px;
 }
 .logo{
   
@@ -55,17 +56,91 @@ body{
 
 .btn a{
   text-decoration: none;
-  
   color: #FFFFFF;
 }
 
 .btn-nav{
   background-color: #13183F;
+  padding: 1.2rem 2.4rem;
 }
 
-@media(min-width: 768px){
-  .container{
-    width: 89%;
-   max-width: 768px;
+.btn-nav:hover{
+  background-color: #666CA3;
+}
+
+@media(min-width:375px){
+  .header.container{
+   width: 89%;
+   max-width: 689px;
+   margin-top: 2.4rem;
+  }
+}
+
+@media(min-width:768px){
+ .header.container{
+   width: 78%;
+   max-width: 1110px;
+   margin-top: 2.4rem;
+  }
+
+  .btn{
+    font-size: 1.8rem;
+  }
+
+  .logo{
+    font-size: 3.6rem;
+  }
+}
+
+/* HERO SECTION */
+.hero{
+  margin-top: 3.8rem;
+}
+.heading-primary{
+  font-size: 4rem;
+
+}
+
+.hero-desc{
+  font-size: 1.6rem;
+  font-weight: 100;
+  color: #83869A;
+  line-height: 2;
+  margin-top:2.6rem ;
+}
+
+.btn-hero{
+  display:inline-block;
+  background-image: linear-gradient(to bottom, #FF6F48,#F02AA6);
+  padding: 1.5rem 3.8rem;
+  margin-top: 2.4rem;
+}
+
+.hero-img-box{
+  height: 40rem;
+  background-image: url("assets/image-hero-mobile.png");
+  background-position: center;
+  background-size: cover;
+  margin-top: 7rem;
+}
+
+@media(min-width:375px){
+  .hero-box{
+    display: flex;
+    
+  }
+  .hero-text{
+    width: 39.8rem;
+  }
+  .hero-img-box{
+    height: 80rem;
+    width: 40rem;
+    position: relative;
+    right:-220px;
+    top: -250px;
+    background-image: url("assets/image-hero-tablet.png");
+    background-position: center;
+    background-size: cover;
+   
   }
 }
