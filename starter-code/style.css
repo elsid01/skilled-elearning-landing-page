@@ -37,6 +37,12 @@ body{
    
  }
 
+ .grid{
+   display: grid;
+ }
+ .grid-2--col{
+   grid-template-columns: repeat(2, 1fr);
+ }
 /* HEADER SECTION */
 .header{
 
@@ -67,8 +73,8 @@ body{
 .btn-nav:hover{
   background-color: #666CA3;
 }
-
-@media(min-width:375px){
+/* 
+@media(min-width:37.5rem){
   .header.container{
    width: 89%;
    max-width: 689px;
@@ -76,7 +82,7 @@ body{
   }
 }
 
-@media(min-width:768px){
+@media(min-width:76.8rem){
  .header.container{
    width: 78%;
    max-width: 1110px;
@@ -90,7 +96,7 @@ body{
   .logo{
     font-size: 3.6rem;
   }
-}
+} */
 
 /* HERO SECTION */
 .hero{
@@ -124,23 +130,69 @@ body{
   margin-top: 7rem;
 }
 
-@media(min-width:375px){
-  .hero-box{
-    display: flex;
-    
-  }
-  .hero-text{
-    width: 39.8rem;
-  }
-  .hero-img-box{
-    height: 80rem;
-    width: 40rem;
-    position: relative;
-    right:-220px;
-    top: -250px;
-    background-image: url("assets/image-hero-tablet.png");
-    background-position: center;
-    background-size: cover;
-   
-  }
+/* SERVICES */
+
+.services-heading--box{
+  background-image: linear-gradient(to bottom, #FF6F48,#F02AA6);
+  text-align:left;
+  padding:2.4rem 2.9rem 3.2rem 2.8rem ;
+  border-radius: 9px;
+}
+
+.services-heading{
+ color: #FFFFFF;
+ font-size: 2.4rem;
+}
+.services-item{
+  margin-top: 4rem;
+  padding: 0 2.9rem 3.2rem 2.8rem;
+  box-shadow:1px 0px 5px #F5F5F5 ;
+  border-radius: 15px;
+}
+.services-icon{
+  position: relative;
+  top: -25px;
+}
+.services-title{
+  font-size: 2rem;
+  color: #13183F;
+  margin-bottom: 1.6rem;
+}
+
+.services-desc{
+  font-size: 1.6rem;
+  line-height: 2;
+  color: #83869A;
+  margin-bottom: 2.4rem;
+  width: 28.6rem;
+}
+
+.services-action{
+ font-size: 1.8rem;
+ color: #F74780;
+}
+
+/* FOOTER */
+
+.footer{
+  background-color: #13183F;
+  margin-top: 8rem;
+  padding: 3.2rem 1.6rem;
+}
+
+.btn-footer{
+  background-image: linear-gradient(to bottom,#F02AA6, #4851FF);
+  padding:.9rem 2.4rem ;
+  text-align: center;
+}
+
+.footer-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.8rem;
+  margin-top: 16px;
+  
+  justify-content:space-between;
+  align-items: center;
 }
